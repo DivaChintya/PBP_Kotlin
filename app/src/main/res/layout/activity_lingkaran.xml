@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skyblue"
+    tools:context=".lingkaranActivity">
+
+    <!-- Judul -->
+    <TextView
+        android:id="@+id/jlingkaran"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lingkaran"
+        android:textColor="@color/oren"
+        android:fontFamily="@font/nbold"
+        android:textSize="50sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp" />
+
+    <!-- Gambar lingkaran -->
+
+    <!-- Label Jari-jari -->
+    <ImageView
+        android:id="@+id/gLingkaran"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/jlingkaran"
+        app:srcCompat="@drawable/lingkaran" />
+
+    <TextView
+        android:id="@+id/jari2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Jari-jari ="
+        android:fontFamily="@font/nsemibold"
+        android:textColor="@color/oren"
+        android:textSize="25sp"
+        app:layout_constraintTop_toBottomOf="@id/gLingkaran"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp" />
+
+    <!-- Input jari-jari -->
+
+    <!-- Label cm -->
+
+    <!-- Tombol Hitung -->
+
+    <EditText
+        android:id="@+id/inputJari2"
+        android:layout_width="175dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="8dp"
+        android:background="@drawable/edittext_background"
+        android:fontFamily="@font/nmedium"
+        android:hint="masukkan jari-jari"
+        android:inputType="numberDecimal"
+        android:padding="10dp"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        app:layout_constraintStart_toEndOf="@id/jari2"
+        app:layout_constraintTop_toTopOf="@id/jari2" />
+
+    <TextView
+        android:id="@+id/cmisiL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/nregular"
+        android:text="cm"
+        android:textColor="@color/oren"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/inputJari2"
+        app:layout_constraintTop_toTopOf="@id/inputJari2" />
+
+    <Button
+        android:id="@+id/hitungL"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/nbold"
+        android:text="Hitung"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/inputJari2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="24dp" />
+
+    <!-- Luas Lingkaran -->
+    <TextView
+        android:id="@+id/luasL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Luas Lingkaran"
+        android:textColor="@color/oren"
+        android:textSize="20sp"
+        android:fontFamily="@font/nsemibold"
+        app:layout_constraintTop_toBottomOf="@id/hitungL"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp" />
+
+    <TextView
+        android:id="@+id/hasilLuasL"
+        android:layout_width="128dp"
+        android:layout_height="52dp"
+        android:background="@drawable/edittext_background"
+        android:fontFamily="@font/nsemibold"
+        android:text=""
+        android:textColor="@color/oren"
+        android:textSize="25sp"
+        android:gravity="center_vertical|center_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/luasL"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="24dp" />
+
+    <!-- Keliling Lingkaran -->
+    <TextView
+        android:id="@+id/cmhasilLuasL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginBottom="12dp"
+        android:fontFamily="@font/nregular"
+        android:text="cm²"
+        android:textColor="@color/oren"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/hasilLuasL"
+        app:layout_constraintStart_toEndOf="@id/hasilLuasL" />
+
+    <TextView
+        android:id="@+id/kelilingL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="44dp"
+        android:fontFamily="@font/nsemibold"
+        android:text="Keliling Lingkaran"
+        android:textColor="@color/oren"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/luasL" />
+
+    <TextView
+        android:id="@+id/hasilKelL"
+        android:layout_width="128dp"
+        android:layout_height="52dp"
+        android:background="@drawable/edittext_background"
+        android:fontFamily="@font/nsemibold"
+        android:text=""
+        android:textColor="@color/oren"
+        android:textSize="25sp"
+        android:gravity="center_vertical|center_horizontal"
+        app:layout_constraintTop_toTopOf="@id/hasilLuasL"
+        app:layout_constraintStart_toEndOf="@id/hasilLuasL"
+        android:layout_marginStart="48dp" />
+
+    <!-- Tombol Kembali -->
+
+    <TextView
+        android:id="@+id/cmhasilKelL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginBottom="8dp"
+        android:fontFamily="@font/nregular"
+        android:text="cm"
+        android:textColor="@color/oren"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@id/hasilKelL"
+        app:layout_constraintStart_toEndOf="@id/hasilKelL" />
+
+    <ImageView
+        android:id="@+id/kembaliL"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:contentDescription="Kembali"
+        app:srcCompat="@drawable/kembali"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

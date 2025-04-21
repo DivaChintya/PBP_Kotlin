@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skyblue"
+    tools:context=".menuActivity">
+
+    <!-- Judul -->
+    <TextView
+        android:id="@+id/jmenghitungluas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nbold"
+        android:text="Menghitung Luas"
+        android:textColor="@color/oren"
+        android:textSize="30sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="60dp" />
+
+    <TextView
+        android:id="@+id/jbangundatar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nbold"
+        android:text="Bangun Datar"
+        android:textColor="@color/oren"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/jmenghitungluas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="4dp" />
+
+    <!-- Gambar Persegi -->
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="133dp"
+        android:layout_height="140dp"
+        app:srcCompat="@drawable/menupersegi"
+        android:contentDescription="Persegi"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toBottomOf="@id/jbangundatar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="40dp"
+        android:layout_marginStart="40dp" />
+
+    <!-- Gambar Lingkaran -->
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="133dp"
+        android:layout_height="140dp"
+        app:srcCompat="@drawable/menulingkaran"
+        android:contentDescription="Lingkaran"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toTopOf="@id/imageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="40dp" />
+
+    <!-- Gambar Segitiga -->
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="133dp"
+        android:layout_height="140dp"
+        app:srcCompat="@drawable/menusegitiga"
+        android:contentDescription="Segitiga"
+        android:clickable="true"
+        android:focusable="true"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

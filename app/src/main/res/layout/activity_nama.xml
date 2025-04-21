@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skyblue">
+
+    <TextView
+        android:id="@+id/tvNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Diva Chintya Putri Nussandy"
+        android:fontFamily="@font/nbold"
+        android:textSize="20sp"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/tvNim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2310511073"
+        android:fontFamily="@font/nbold"
+        android:textSize="20sp"
+        android:layout_below="@id/tvNama"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="159dp"
+        android:layout_height="62dp"
+        android:text="Next"
+        android:fontFamily="@font/nbold"
+        android:layout_marginTop="600dp"
+        android:layout_marginLeft="200dp"
+        android:background="@drawable/button_background"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
+
+
+</RelativeLayout>

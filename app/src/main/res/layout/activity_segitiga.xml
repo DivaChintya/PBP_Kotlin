@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skyblue">
+
+    <TextView
+        android:id="@+id/jsegitiga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Segitiga"
+        android:textColor="@color/oren"
+        android:fontFamily="@font/nbold"
+        android:textSize="50sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="32dp"/>
+
+    <TextView
+        android:id="@+id/alas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Alas ="
+        android:fontFamily="@font/nsemibold"
+        android:textColor="@color/oren"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@id/gsegitiga"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp" />
+
+
+    <EditText
+        android:id="@+id/inputAlas"
+        android:layout_width="175dp"
+        android:layout_height="51dp"
+        android:background="@drawable/edittext_background"
+        android:hint="masukkan alas"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:textSize="17sp"
+        android:fontFamily="@font/nmedium"
+        app:layout_constraintTop_toTopOf="@id/alas"
+        app:layout_constraintStart_toEndOf="@id/alas"
+        android:layout_marginStart="8dp" />
+
+    <Button
+        android:id="@+id/hitungS"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:background="@drawable/button_background"
+        android:text="Hitung"
+        android:textColor="@color/white"
+        android:fontFamily="@font/nbold"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/inputAlas"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp" />
+
+    <TextView
+        android:id="@+id/cmisiSA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cm"
+        android:textColor="@color/oren"
+        android:fontFamily="@font/nregular"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@id/inputAlas"
+        app:layout_constraintTop_toTopOf="@id/inputAlas"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:id="@+id/luassgt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Luas Segitiga"
+        android:textColor="@color/oren"
+        android:fontFamily="@font/nsemibold"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@id/hitungS"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="24dp"
+        android:layout_marginStart="24dp" />
+
+    <TextView
+        android:id="@+id/cmhasilLuasS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cm²"
+        android:textColor="@color/oren"
+        android:textSize="20sp"
+        android:fontFamily="@font/nregular"
+        app:layout_constraintTop_toTopOf="@id/hasilLuasS"
+        app:layout_constraintStart_toEndOf="@id/hasilLuasS"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp" />
+
+    <TextView
+        android:id="@+id/hasilLuasS"
+        android:layout_width="128dp"
+        android:layout_height="49dp"
+        android:background="@drawable/edittext_background"
+        android:text=""
+        android:textColor="@color/oren"
+        android:textSize="25sp"
+        android:fontFamily="@font/nsemibold"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/luassgt"
+        app:layout_constraintStart_toStartOf="@id/luassgt"
+        android:layout_marginTop="8dp" />
+
+    <ImageView
+        android:id="@+id/gsegitiga"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="40dp"
+        app:layout_constraintTop_toBottomOf="@id/jsegitiga"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/segitiga" />
+
+    <TextView
+        android:id="@+id/kelilingsgt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="52dp"
+        android:fontFamily="@font/nsemibold"
+        android:text="Keliling Segitiga"
+        android:textColor="@color/oren"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/luassgt" />
+
+    <TextView
+        android:id="@+id/hasilKelilingS"
+        android:layout_width="128dp"
+        android:layout_height="49dp"
+        android:background="@drawable/edittext_background"
+        android:text=""
+        android:textColor="@color/oren"
+        android:textSize="25sp"
+        android:fontFamily="@font/nsemibold"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/kelilingsgt"
+        app:layout_constraintStart_toStartOf="@id/kelilingsgt"
+        android:layout_marginTop="8dp" />
+
+    <TextView
+        android:id="@+id/cmhasilKelS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="cm"
+        android:textColor="@color/oren"
+        android:textSize="20sp"
+        android:fontFamily="@font/nregular"
+        app:layout_constraintTop_toTopOf="@id/hasilKelilingS"
+        app:layout_constraintStart_toEndOf="@id/hasilKelilingS"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="12dp" />
+
+    <ImageView
+        android:id="@+id/kembaliS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:srcCompat="@drawable/kembali"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

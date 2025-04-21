@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/persegiLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/skyblue"
+    tools:context=".persegiActivity">
+
+    <TextView
+        android:id="@+id/jpersegi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Persegi"
+        android:textColor="@color/oren"
+        android:fontFamily="@font/nbold"
+        android:textSize="50sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"/>
+
+    <ImageView
+        android:id="@+id/gpersegi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/persegi"
+        app:layout_constraintTop_toBottomOf="@+id/jpersegi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="30dp" />
+
+    <TextView
+        android:id="@+id/sisi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sisi = "
+        android:fontFamily="@font/nsemibold"
+        android:textColor="@color/oren"
+        android:textSize="30sp"
+        app:layout_constraintTop_toBottomOf="@+id/gpersegi"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="24dp"/>
+
+    <EditText
+        android:id="@+id/inputSisi"
+        android:layout_width="175dp"
+        android:layout_height="51dp"
+        android:background="@drawable/edittext_background"
+        android:hint="masukkan sisi"
+        android:inputType="number"
+        android:textColor="@color/black"
+        android:padding="10dp"
+        android:textSize="17sp"
+        android:fontFamily="@font/nmedium"
+        app:layout_constraintTop_toTopOf="@+id/sisi"
+        app:layout_constraintStart_toEndOf="@+id/sisi"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/cmisiP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nregular"
+        android:text="cm"
+        android:textColor="@color/oren"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@+id/sisi"
+        app:layout_constraintStart_toEndOf="@+id/inputSisi"
+        android:layout_marginStart="10dp"/>
+
+    <Button
+        android:id="@+id/hitungP"
+        android:layout_width="0dp"
+        android:layout_height="47dp"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/nbold"
+        android:text="Hitung"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/inputSisi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp" />
+
+    <TextView
+        android:id="@+id/luaspsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/nsemibold"
+        android:text="Luas Persegi"
+        android:textColor="@color/oren"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.108"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hitungP" />
+
+    <TextView
+        android:id="@+id/hasilLuasP"
+        android:layout_width="114dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_background"
+        android:fontFamily="@font/nsemibold"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/oren"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/luaspsg" />
+
+    <TextView
+        android:id="@+id/cmhasilP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/nregular"
+        android:text="cm²"
+        android:textColor="@color/oren"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@+id/hasilLuasP"
+        app:layout_constraintStart_toEndOf="@+id/hasilLuasP"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/hasilLuasP"/>
+
+    <ImageView
+        android:id="@+id/kembaliP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:clickable="true"
+        android:focusable="true"
+        app:srcCompat="@drawable/kembali"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/kelilingpsg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="36dp"
+        android:fontFamily="@font/nsemibold"
+        android:text="Keliling Persegi"
+        android:textColor="@color/oren"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.773"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/hitungP" />
+
+    <TextView
+        android:id="@+id/hasilKelP"
+        android:layout_width="114dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edittext_background"
+        android:fontFamily="@font/nsemibold"
+        android:gravity="center"
+        android:text=""
+        android:textColor="@color/oren"
+        android:textSize="25sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/luaspsg" />
+
+    <TextView
+        android:id="@+id/cmhasilKelP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="180dp"
+        android:fontFamily="@font/nregular"
+        android:text="cm"
+        android:textColor="@color/oren"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/hasilLuasP"
+        app:layout_constraintStart_toEndOf="@+id/hasilLuasP"
+        app:layout_constraintTop_toTopOf="@+id/hasilLuasP"
+        app:layout_constraintVertical_bias="0.52" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
